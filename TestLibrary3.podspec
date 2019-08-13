@@ -32,6 +32,12 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Sub1' do |ss|
     ss.source_files = 'TestLibrary3/Classes/Sub1/*'
+    ss.pod_target_xcconfig = {
+      'FOO' => 'BAR'
+    }
+    ss.user_target_xcconfig = {
+      'BIZ' => 'BUZ'
+    }
   end
 
   s.subspec 'Sub2' do |ss|
